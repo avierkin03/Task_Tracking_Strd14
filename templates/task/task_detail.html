@@ -6,7 +6,7 @@
     <p>Priority: {{ task.priority }}</p>
     <p>Deadline: {{ task.deadline }}</p>
     <p>
-        <a href="#">Edit</a>
+        <a href="{% url 'task-update' pk=task.pk %}">Edit</a>
         <a href="#">Delete</a>
     </p>
 {% endblock %}
